@@ -1,8 +1,14 @@
+// 'use strict'
 const name = "john doe"; // 'name' is a constant variable
 age = 21; // 'age' is an undeclared variable (implicitly global in non-strict mode)
+obj = {
+    name:"Navjot",
+    class:"xyz"
+}
 
 /**delete opearator return true if operation is success and false if operation is unsuccess */
-
+console.log(delete obj);
+console.log(obj);
 console.log(delete name); // Attempt to delete 'name'
 console.log(delete age); // Attempt to delete 'age'
 console.log(name); // Logs the value of 'name'
